@@ -1,0 +1,16 @@
+.bg-yellow {
+  background-color: lightyellow;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded-border {
+  border: 3px solid black;
+}
+
+.img-fluid {
+  height: 30vh;
+  object-fit: cover;
+}

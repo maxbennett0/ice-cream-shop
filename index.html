@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Ice Cream</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/6.9.96/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="bg-yellow">
+  <main class="container-fluid">
+    <section class="row">
+      <div class="col-4 card justify-content-between">
+        <section class="row p-3">
+          <div class="d-flex justify-content-between">
+            <h6>Name</h6>
+            <h6>Qty</h6>
+            <h6>Total</h6>
+          </div>
+        </section>
+        <section id="cart" class="row">
+          <div class="col-12 d-flex justify-content-between m-0">
+            <i class="mdi mdi-close cursor-pointer" onclick="removeItem()"></i>
+            <p>name</p>
+            <p>quantity</p>
+            <p>price</p>
+          </div>
+        </section>
+        <section class="row p-3">
+          <div class="col-12 d-flex justify-content-end">
+            Total: $
+            <span id="total" class="text-primary">13.00</span>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button onclick="checkout()">Buy</button>
+          </div>
+        </section>
+      </div>
+      <div class="col-8 card text-center">
+        <section id="toppings" class="row p-5">
+          <section class="row justify-content-around">
+            <h1>Toppings</h1>
+            <div class="col-4 cursor-pointer" onclick="buyMenu('Sprinkles')">
+              <div class="d-flex justify-content-around">
+                <p>Sprinkles</p>
+                <p>$1</p>
+              </div>
+            </div>
+            <div class="col-4 cursor-pointer" onclick="buyMenu('Chocolate Chips')">
+              <div class="d-flex justify-content-around">
+                <p>Chocolate Chips</p>
+                <p>$2</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="vessels" class="row p-5">
+          <section class="row justify-content-around">
+            <h1>Vessels</h1>
+            <div class="col-4 cursor-pointer" onclick="buyMenu('Waffle Cone')">
+              <div class="d-flex justify-content-around">
+                <p>Waffle Cone</p>
+                <p>$2</p>
+              </div>
+            </div>
+            <div class="col-4 cursor-pointer" onclick="buyMenu('Waffle Bowl')">
+              <div class="d-flex justify-content-around">
+                <p>Waffle Bowl</p>
+                <p>$4</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="iceCream" class="row p-5">
+          <section class="row justify-content-around">
+            <h1>Ice Cream</h1>
+            <div class="col-4 cursor-pointer" onclick="buyMenu('Cookie Dough')">
+              <div class="d-flex justify-content-around">
+                <p>Cookie Dough</p>
+                <p>$1</p>
+              </div>
+            </div>
+            <div class="col-4 cursor-pointer" onclick="buyMenu('Vanilla')">
+              <div class="d-flex justify-content-around">
+                <p>Vanilla</p>
+                <p>$1</p>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
