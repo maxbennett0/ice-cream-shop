@@ -68,7 +68,7 @@ function drawCart() {
   })
 }
 
-function checkout(empty) {
+function checkout() {
   if (window.confirm("u sure")) {
     menu.forEach(m => {
       m.quantity = 0
